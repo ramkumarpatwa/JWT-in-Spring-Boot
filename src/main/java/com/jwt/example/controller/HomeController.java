@@ -16,6 +16,7 @@ public class HomeController {
     @Autowired
     UserService userService;
 
+    //  http://localhost:8080/home/users
     @GetMapping("/users")
     public List<User> getUser(){
         return userService.getAllUsers();
